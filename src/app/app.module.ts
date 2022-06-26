@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AlertdemoComponent } from './alertdemo/alertdemo.component';
+import {SkyAlertModule} from '@skyux/indicators';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlertdemoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SkyAlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]
